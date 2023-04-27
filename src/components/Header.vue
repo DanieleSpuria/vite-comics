@@ -13,7 +13,7 @@
 <template>
   <header>
     <div class="container">
-      <img src="" alt="logo">
+      <img src="src/assets/img/dc-logo.png" alt="logo">
       <nav>
         <ul>
           <li
@@ -29,7 +29,8 @@
 </template>
 
 <style lang="scss" scoped>
-  @use '../scss/partials/mixin.scss' as *;
+  @use '../scss/partials/mixin' as *;
+  @use '../scss/partials/variables' as *;
 
   header {
     width: 100%;
@@ -41,6 +42,10 @@
       justify-content: space-between;
       height: 100%;
 
+      img {
+        width: 80px
+      }
+
       nav {
         @include flex;
   
@@ -48,7 +53,13 @@
         @include flex;
   
           li {
-            padding: 15px
+            padding: 15px;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            &:hover {
+              color: $primary-color;
+            }
           }
         }
       } 

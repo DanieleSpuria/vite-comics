@@ -189,6 +189,7 @@
           }
           .circle {
             margin: 0 10px;
+            cursor: pointer;
           }
         }
       }
