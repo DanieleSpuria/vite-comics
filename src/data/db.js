@@ -79,6 +79,43 @@ const shop = [
   },
 ];
 
+const dcComics = [
+  {
+    name: 'characters',
+    href: '#'
+  },
+  {
+    name: 'comics',
+    href: '#'
+  },
+  {
+    name: 'movie',
+    href: '#'
+  },
+  {
+    name: 'tv',
+    href: '#'
+  },
+  {
+    name: 'games',
+    href: '#'
+  },
+  {
+    name: 'videos',
+    href: '#',
+    active: false
+  },
+  {
+    name: 'fans',
+    href: '#'
+  },
+  {
+    name: 'news',
+    href: '#',
+    active: false
+  }
+];
+
 const footerShop = [
   {
     name: 'Shop DC',
@@ -160,4 +197,4 @@ const sites = [
   }
 ];
 
-export {menu, shop, footerShop, dC, sites}
+export {menu, shop, dcComics, footerShop, dC, sites}
