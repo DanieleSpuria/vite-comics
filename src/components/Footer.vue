@@ -149,8 +149,11 @@
               padding: 4px 0;
 
               a {
-
               color: #959595;
+
+              &:hover {
+                color: $primary-color;
+              }
               }
             }
           }
@@ -183,6 +186,10 @@
           padding: 0 10px;
           background-color: #303030;
           border: 1px solid $primary-color;
+
+          &:hover {
+            background-color: $primary-color;
+          }
         }
 
         .social {
