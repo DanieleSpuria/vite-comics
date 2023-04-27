@@ -198,11 +198,26 @@ const sites = [
 ];
 
 const social = [
-  'src/assets/img/footer-facebook.png',
-  'src/assets/img/footer-periscope.png',
-  'src/assets/img/footer-pinterest.png',
-  'src/assets/img/footer-twitter.png',
-  'src/assets/img/footer-youtube.png'
+  {
+  img: 'src/assets/img/footer-facebook.png',
+  href: '#'
+  },
+  {
+  img: 'src/assets/img/footer-periscope.png',
+  href: '#'
+  },
+  {
+  img: 'src/assets/img/footer-pinterest.png',
+  href: '#'
+  },
+  {
+  img: 'src/assets/img/footer-twitter.png',
+  href: '#'
+  },
+  {
+  img: 'src/assets/img/footer-youtube.png',
+  href: '#'
+  }
 ]
 
 export {menu, shop, dcComics, footerShop, dC, sites, social}

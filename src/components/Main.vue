@@ -15,7 +15,7 @@
 
   main {
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: black;
     color: white;
     @include flex;

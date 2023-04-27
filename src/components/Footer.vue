@@ -35,7 +35,7 @@
                   v-for="(link, index) of dcComics"   
                   :key="index"
                 >
-                  {{ link.name }}
+                <a :href="link.href">{{ link.name }}</a> 
                 </li>
               </ul>
             </nav>
@@ -47,7 +47,7 @@
                   v-for="(link, index) of footerShop"   
                   :key="index"
                 >
-                  {{ link.name }}
+                <a :href="link.href">{{ link.name }}</a> 
                 </li>
               </ul>
             </nav>
@@ -61,7 +61,7 @@
                   v-for="(link, index) of dC"   
                   :key="index"
                 >
-                  {{ link.name }}
+                  <a :href="link.href">{{ link.name }}</a> 
                 </li>
               </ul>
             </nav>
@@ -75,7 +75,7 @@
                   v-for="(link, index) of sites"   
                   :key="index"
                 >
-                  {{ link.name }}
+                <a :href="link.href">{{ link.name }}</a> 
                 </li>
               </ul>
             </nav>
@@ -101,10 +101,12 @@
             v-for="(link, index) of social"   
             :key="index"
           >
-            <img
-              :src="link"
-              alt="social"
-            >
+            <a :href="link.href">
+              <img
+                :src="link.img"
+                alt="social"
+              >
+            </a> 
           </div>
         </div>
       </div>
@@ -144,22 +146,25 @@
 
             li {
               font-size: 13px;
-              padding: 4px 0;;
+              padding: 4px 0;
+
+              a {
+
               color: #959595;
+              }
             }
           }
         }
   
         .right{
-          display: flex;
-          justify-content: end;
           position: relative;
           width: 60%;
   
           img {
             position: absolute;
             top: -80px;
-            width: 80%;
+            right: 0;
+            width: 650px;
           }
         }
       }

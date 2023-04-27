@@ -10,6 +10,13 @@
   }
 </script>
 
+
+
+
+
+
+
+
 <template>
   <div class="shop">
     <div class="container">
@@ -20,13 +27,20 @@
               :key="index"
             >
               <img :src="link.img" alt="imgShop">
-              <span>{{ link.name }}</span> 
+              <a :href="link.href">{{ link.name }}</a>
             </li>
         </ul>
       </nav>
     </div>
   </div>
 </template>
+
+
+
+
+
+
+
 
 <style lang="scss" scoped>
   @use '../scss/partials/variables'  as *;
@@ -49,6 +63,10 @@
         img {
           width: 50px;
           margin-right: 10px;
+        }
+
+        a {
+          color: white
         }
       }
     }
