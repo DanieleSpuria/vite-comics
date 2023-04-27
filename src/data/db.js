@@ -77,6 +77,87 @@ const shop = [
     img: '../assets/img/buy-dc-power-visa.svg',
     href: '#'
   },
-]
+];
 
-export {menu, shop}
+const footerShop = [
+  {
+    name: 'Shop DC',
+    href: '#'
+  },
+  {
+    name: 'Schop DC Collection',
+    href: '#'
+  },
+];
+
+const dC = [
+  {
+    name: 'Teams Of Use',
+    href: '#'
+  },
+  {
+    name: 'Privacy policy (News)',
+    href: '#'
+  },
+  {
+    name: 'Ad Choices',
+    href: '#'
+  },
+  {
+    name: 'Advertising',
+    href: '#'
+  },
+  {
+    name: 'Jobs',
+    href: '#'
+  },
+  {
+    name: 'Subscriptions',
+    href: '#'
+  },
+  {
+    name: 'Talent Workshops',
+    href: '#'
+  },
+  {
+    name: 'CPSC Certificates',
+    href: '#'
+  },
+  {
+    name: 'Ratings',
+    href: '#'
+  },
+  {
+    name: 'Shop Help',
+    href: '#'
+  },
+  {
+    name: 'Contact Us',
+    href: '#'
+  },
+];
+
+const sites = [
+  {
+    name: 'DC',
+    href: '#'
+  },
+  {
+    name: 'MAD Magazine',
+    href: '#'
+  },
+  {
+    name: 'DC Kids',
+    href: '#'
+  },
+  {
+    name: 'DC Universe',
+    href: '#'
+  },
+  {
+    name: 'DC Power VIsa',
+    href: '#'
+  }
+];
+
+export {menu, shop, footerShop, dC, sites}

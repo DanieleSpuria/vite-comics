@@ -39,7 +39,8 @@
     .container {
       @include flex('vertical');
       justify-content: space-between;
-      
+      height: 100%;
+
       nav {
         @include flex;
   
