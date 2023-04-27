@@ -10,6 +10,14 @@
   }
 </script>
 
+
+
+
+
+
+
+
+
 <template>
   <header>
     <div class="container">
@@ -20,13 +28,23 @@
             v-for="(link, index) of menu"   
             :key="index"
           >
-            {{ link.name }}
+            <a
+              href="link.href"
+              :class="{'active' : link.active}"
+            > {{ link.name }} </a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 </template>
+
+
+
+
+
+
+
 
 <style lang="scss" scoped>
   @use '../scss/partials/mixin' as *;
@@ -47,18 +65,29 @@
       }
 
       nav {
-        @include flex;
+        height: 100%;
   
         ul {
-        @include flex;
+          height: 100%;
+          @include flex;
   
           li {
-            padding: 15px;
+            height: 100%;
+            padding: 0 15px;
             font-size: 12px;
             text-transform: uppercase;
 
-            &:hover {
+            a {
+              @include flex;
+              height: 100%;
+              color: black;
+              &.active {
+                border-bottom: 5px solid $primary-color;
+              }
+
+              &:hover {
               color: $primary-color;
+            }
             }
           }
         }

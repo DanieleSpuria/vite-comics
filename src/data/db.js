@@ -2,7 +2,7 @@ const menu = [
   {
     name: 'characters',
     href: '#',
-    active: false
+    active: true
   },
   {
     name: 'comics',
