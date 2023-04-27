@@ -1,5 +1,5 @@
 <script>
-  import {dcComics, footerShop, dC, sites} from '../data/db'
+  import {dcComics, footerShop, dC, sites, social} from '../data/db'
   export default { 
     name: 'Footer',
     data() {
@@ -7,11 +7,19 @@
         dcComics,
         footerShop, 
         dC,
-        sites
+        sites, 
+        social
       }
     }
   }
 </script>
+
+
+
+
+
+
+
 
 <template>
   <footer>
@@ -81,14 +89,39 @@
     </div>
 
     <div class="bottom">
+      <div class="container">
+        <button>
+          <h3>SIGN-UP NOW!</h3>
+        </button>
 
+        <div class="social">
+          <h3>FOLLOW US</h3>
+          <div
+            class="circle"
+            v-for="(link, index) of social"   
+            :key="index"
+          >
+            <img
+              :src="link"
+              alt="social"
+            >
+          </div>
+        </div>
+      </div>
     </div>
     
   </footer>
 </template>
 
+
+
+
+
+
+
 <style lang="scss" scoped>
   @use '../scss/partials/mixin' as *;
+  @use '../scss/partials/variables' as *;
 
   footer {
     height: 600px;
@@ -135,6 +168,30 @@
     .bottom {
       height: 20%;
       background-color: #303030;
+
+      .container {
+        height: 100%;
+        @include flex('vertical');
+        justify-content: space-between;
+
+        button {
+          padding: 0 10px;
+          background-color: #303030;
+          border: 1px solid $primary-color;
+        }
+
+        .social {
+          @include flex;
+
+          h3 {
+            margin: 0 10px;
+            color: $primary-color;
+          }
+          .circle {
+            margin: 0 10px;
+          }
+        }
+      }
     }
   }
 </style>

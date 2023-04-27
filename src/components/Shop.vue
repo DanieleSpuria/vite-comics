@@ -34,7 +34,7 @@
 
   .shop {
     width: 100%;
-    height: 120px;
+    height: 150px;
     background-color: $primary-color;
     @include flex;
 
@@ -42,6 +42,15 @@
       @include flex('vertical');
       justify-content: space-around;
       color: white;
+
+      li {
+        @include flex('vertical');
+
+        img {
+          width: 50px;
+          margin-right: 10px;
+        }
+      }
     }
   }
 </style>

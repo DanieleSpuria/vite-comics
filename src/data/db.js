@@ -54,27 +54,27 @@ const menu = [
 const shop = [
   {
     name: 'digital comics',
-    img: '../assets/img/buy-comics-digital-comics.png',
+    img: 'src/assets/img/buy-comics-digital-comics.png',
     href: '#'
   },
   {
     name: 'dc merchandise',
-    img: '../assets/img/buy-comics-merchandise.png',
+    img: 'src/assets/img/buy-comics-merchandise.png',
     href: '#'
   },
   {
     name: 'subcription',
-    img: '../assets/img/buy-comics-subscriptions.png',
+    img: 'src/assets/img/buy-comics-subscriptions.png',
     href: '#'
   },
   {
     name: 'comic shop locator',
-    img: '../assets/img/buy-comics-shop-locator.png',
+    img: 'src/assets/img/buy-comics-shop-locator.png',
     href: '#'
   },
   {
     name: 'dc power visa',
-    img: '../assets/img/buy-dc-power-visa.svg',
+    img: 'src/assets/img/buy-dc-power-visa.svg',
     href: '#'
   },
 ];
@@ -197,4 +197,12 @@ const sites = [
   }
 ];
 
-export {menu, shop, dcComics, footerShop, dC, sites}
+const social = [
+  'src/assets/img/footer-facebook.png',
+  'src/assets/img/footer-periscope.png',
+  'src/assets/img/footer-pinterest.png',
+  'src/assets/img/footer-twitter.png',
+  'src/assets/img/footer-youtube.png'
+]
+
+export {menu, shop, dcComics, footerShop, dC, sites, social}
