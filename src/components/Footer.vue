@@ -126,7 +126,7 @@
           img {
             position: absolute;
             top: -80px;
-            width: 60%;
+            width: 80%;
           }
         }
       }
