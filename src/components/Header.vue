@@ -5,9 +5,13 @@
 </script>
 
 <template>
-  Header
+  <header>
+    header
+  </header>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+  header {
+    width: 100%;
+  }
 </style>

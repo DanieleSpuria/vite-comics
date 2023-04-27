@@ -5,9 +5,13 @@
 </script>
 
 <template>
-  Footer
+  <footer>
+    footer
+  </footer>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+  footer {
+    width: 100%;
+  }
 </style>

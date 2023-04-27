@@ -5,9 +5,13 @@
 </script>
 
 <template>
-  Shop
+  <div class="shop">
+    shop
+  </div>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+  .shop {
+    width: 100%;
+  }
 </style>
