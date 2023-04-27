@@ -6,6 +6,16 @@
       return {
         menu
       }
+    },
+
+    methods: {
+      click(link) {
+        this.menu.forEach (link => {
+          link.active = false
+        })
+
+        link.active = !link.active;
+      }
     }
   }
 </script>
@@ -29,8 +39,9 @@
             :key="index"
           >
             <a
-              href="link.href"
+              :href="link.href"
               :class="{'active' : link.active}"
+              @click="click(link, index)"
             > {{ link.name }} </a>
           </li>
         </ul>
@@ -83,6 +94,7 @@
               color: black;
               &.active {
                 border-bottom: 5px solid $primary-color;
+                border-top: 5px solid white;
               }
 
               &:hover {
