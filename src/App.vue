@@ -20,12 +20,10 @@ export default {
 </script>
 
 <template>
-  <div class="container">
     <Header/>
     <Main/>
     <Shop/>
     <Footer/>
-  </div>
 </template>
 
 <style lang="scss">

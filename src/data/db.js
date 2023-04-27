@@ -1,4 +1,4 @@
-menu: [
+const menu = [
   {
     name: 'characters',
     href: '#',
@@ -49,6 +49,34 @@ menu: [
     href: '#',
     active: false
   },
+];
+
+const shop = [
+  {
+    name: 'digital comics',
+    img: '../assets/img/buy-comics-digital-comics.png',
+    href: '#'
+  },
+  {
+    name: 'dc merchandise',
+    img: '../assets/img/buy-comics-merchandise.png',
+    href: '#'
+  },
+  {
+    name: 'subcription',
+    img: '../assets/img/buy-comics-subscriptions.png',
+    href: '#'
+  },
+  {
+    name: 'comic shop locator',
+    img: '../assets/img/buy-comics-shop-locator.png',
+    href: '#'
+  },
+  {
+    name: 'dc power visa',
+    img: '../assets/img/buy-dc-power-visa.svg',
+    href: '#'
+  },
 ]
 
-export {menu}
+export {menu, shop}
