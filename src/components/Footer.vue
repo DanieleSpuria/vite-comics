@@ -149,11 +149,12 @@
               padding: 4px 0;
 
               a {
-              color: #959595;
+                text-transform: capitalize;
+                color: #959595;
 
-              &:hover {
-                color: $primary-color;
-              }
+                &:hover {
+                  color: $primary-color;
+                }
               }
             }
           }

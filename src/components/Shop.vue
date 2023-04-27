@@ -59,6 +59,11 @@
 
       li {
         @include flex('vertical');
+        transition: all .3s;
+
+        &:hover {
+          transform:scale(1.2)
+        } 
 
         img {
           width: 50px;
@@ -66,7 +71,8 @@
         }
 
         a {
-          color: white
+          text-transform: capitalize;
+          color: white;
         }
       }
     }
