@@ -41,8 +41,8 @@
   @use '../../scss/general/mixin' as *;
 
   .box {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 25px;
+    padding: 25px;
     width: calc(100% / 6);
     text-align: center;
 

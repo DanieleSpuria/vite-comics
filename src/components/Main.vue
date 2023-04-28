@@ -45,6 +45,10 @@
         :price="product.price"
         />
       </div>
+
+      <div class="more">
+        <h5>LOAD MORE</h5>
+      </div>
     </div>
   </main>
 </template>
@@ -74,14 +78,27 @@
 
     .container {
       position: relative;
-      .title {
-        position: absolute;
-        top: -15px;
+      padding: 25px;
+      @include flex;
+      flex-direction: column;
+
+      .title,
+      .more {
         width: 170px;
         padding: 5px 10px;
         background-color: $primary-color;
         font-size: 14px;
         text-align: center;
+      }
+
+      .title {
+        position: absolute;
+        top: -15px;
+        left: 0;
+      }
+
+      .more {
+        margin-top: 25px;
       }
 
       .row {
