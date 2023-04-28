@@ -31,7 +31,7 @@
 <template>
   <header>
     <div class="container">
-      <img src="src/assets/img/dc-logo.png" alt="logo">
+      <img src="../assets/img/dc-logo.png" alt="logo">
       <nav>
         <ul>
           <li

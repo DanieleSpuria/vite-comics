@@ -29,15 +29,22 @@
       <img src="../assets/img/jumbotron.jpg" alt="jumbo">
     </div>
 
+    
     <div class="container">
-      <card
+      <div class="title">
+        <h4>CURRENT SERIES</h4>
+      </div>
+
+      <div class="row">
+        <card
         v-for="(product, index) in products"
         :key="index"
         :thumb="product.thumb"
         :type="product.type"
         :series="product.series"
         :price="product.price"
-      />
+        />
+      </div>
     </div>
   </main>
 </template>
@@ -51,13 +58,13 @@
 
 <style lang="scss" scoped>
   @use '../scss/general/mixin' as *;
+  @use '../scss/general/variables' as *;
 
   main {
     background-color: #1c1c1c;
     color: white;
     
     .jumbotron {
-
       img {
         height: 400px;
         object-fit: cover;
@@ -66,8 +73,21 @@
     }
 
     .container {
+      position: relative;
+      .title {
+        position: absolute;
+        top: -15px;
+        width: 170px;
+        padding: 5px 10px;
+        background-color: $primary-color;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .row {
       display: flex;
       flex-wrap: wrap;
+      }
     }
   }
 </style>

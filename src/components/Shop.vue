@@ -1,5 +1,5 @@
 <script>
-  // import {getImage} from '../assets/js/functions';
+  // import {getImage} from '../assets/js/functions.js'
   import {shop} from '../data/db'
   export default {
     name: 'Shop',
