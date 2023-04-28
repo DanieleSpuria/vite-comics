@@ -6,6 +6,7 @@
 
   export default {
     name: 'App',
+    
     components: {
       Header,
       Main,
@@ -17,7 +18,7 @@
 
 <template>
   <Header/>
-  <Main name="ciao!"/>
+  <Main/>
   <Shop/>
   <Footer/>
 </template>

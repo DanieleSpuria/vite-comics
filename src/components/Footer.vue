@@ -1,7 +1,8 @@
 <script>
-  import {dcComics, footerShop, dC, sites, social} from '../data/db'
+  import {dcComics, footerShop, dC, sites, social} from '../data/db.js'
   export default { 
     name: 'Footer',
+    
     data() {
       return {
         dcComics,
@@ -132,9 +133,8 @@
   @use '../scss/general/variables' as *;
 
   footer {
-    height: 600px;
     .top {
-      height: 80%;
+      padding: 25px;
       background-image: url('../assets/img/footer-bg.jpg');
       background-size: cover;
       overflow: hidden;
@@ -172,7 +172,7 @@
   
           img {
             position: absolute;
-            top: -80px;
+            top: -140px;
             right: 0;
             width: 650px;
           }
@@ -181,7 +181,7 @@
     }
 
     .bottom {
-      height: 20%;
+      padding: 25px;
       background-color: #303030;
 
       .container {

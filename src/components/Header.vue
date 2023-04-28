@@ -2,6 +2,7 @@
   import {menu} from '../data/db';
   export default {
     name: 'Header',
+    
     data() {
       return {
         menu
@@ -13,7 +14,6 @@
         this.menu.forEach (link => {
           link.active = false
         })
-
         link.active = !link.active;
       }
     }
@@ -62,7 +62,6 @@
   @use '../scss/general/variables' as *;
 
   header {
-    width: 100%;
     height: 100px;
     border-bottom: 1px solid black;
 

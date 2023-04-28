@@ -3,6 +3,7 @@
   import {shop} from '../data/db'
   export default {
     name: 'Shop',
+
     data() {
       return {
         shop
@@ -54,8 +55,7 @@
   @use '../scss/general/mixin'  as *;
 
   .shop {
-    width: 100%;
-    height: 150px;
+    padding: 25px;
     background-color: $primary-color;
     @include flex;
 
