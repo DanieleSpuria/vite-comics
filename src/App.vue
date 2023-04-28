@@ -11,11 +11,6 @@
       Main,
       Shop,
       Footer
-    },
-    data() {
-      return {
-        
-      }
     }
   }
 </script>

@@ -19,3 +19,5 @@ buon lavoro!
 - Struttura del progetto
 - Creazione dei vari componenti Header, Shop, Footer
 - Importazione file json
+- Aggiunto componente card 
+- Inserito dati json tramite props

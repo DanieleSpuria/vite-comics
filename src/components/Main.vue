@@ -1,19 +1,19 @@
 <script>
   import products from '../data/dc-comics.json';
+  import card from './partial/card.vue';
   export default {
     name: 'Main',
+    components: {
+      card,
+    },
     props: {
       name: String,
     },
 
     data() {
       return {
-        products,
+        products
       }
-    },
-
-    mounted () {
-      console.log();
     }
   }
 </script>
@@ -26,60 +26,11 @@
     </div>
 
     <div class="container">
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
-      <div class="box">
-        <div class="card">
-          <img :src="products[0].thumb" alt="">
-          <span>{{ products[0].series }}</span>
-        </div>
-      </div>
+      <card
+        :thumb="products[0].thumb"
+        :type="products[0].type"
+        :series="products[0].series"
+      />
     </div>
   </main>
 </template>
@@ -94,24 +45,6 @@
     .container {
       display: flex;
       flex-wrap: wrap;
-
-      .box {
-        margin-top: 20px;
-        padding: 20px;
-        width: calc(100% / 6);
-        text-align: center;
-
-        &:hover {
-          transform: scale(1.2);
-          animation-name: rotate;
-          animation-duration: .5s;
-        }
-
-        @keyframes rotate {
-          0% {transform: rotate(0deg) scale(1)}
-          100% {transform: rotate(360deg) scale(1.2)}
-        }
-      }
     }
   }
 </style>
