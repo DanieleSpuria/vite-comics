@@ -1,6 +1,7 @@
 <script>
   export default {
     name: 'Card',
+
     props: {
       thumb: String,
       type: String,
@@ -9,6 +10,13 @@
   }
 </script>
   
+
+
+
+
+
+
+
 <template>
   <div class="box">
     <div class="card">
@@ -17,6 +25,13 @@
     </div>
   </div>
 </template>
+
+
+
+
+
+
+
 
 
 <style lang="scss" scoped>
@@ -36,5 +51,13 @@
       0% {transform: rotate(0deg) scale(1)}
       100% {transform: rotate(360deg) scale(1.2)}
     }
- }
+
+    .card {
+      height: 100%;
+
+      img {
+        height: 90%;
+      }
+    }
+  }
 </style>

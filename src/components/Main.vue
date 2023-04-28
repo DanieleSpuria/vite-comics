@@ -3,11 +3,9 @@
   import card from './partial/card.vue';
   export default {
     name: 'Main',
+
     components: {
-      card,
-    },
-    props: {
-      name: String,
+      card
     },
 
     data() {
@@ -18,22 +16,37 @@
   }
 </script>
 
+
+
+
+
+
+
+
 <template>
   <main>
-    <!-- <h1>{{ name }}</h1> -->
     <div class="jumbotron">
       <img src="" alt="">
     </div>
 
     <div class="container">
       <card
-        :thumb="products[0].thumb"
-        :type="products[0].type"
-        :series="products[0].series"
+        v-for="(product, index) in products"
+        :key="index"
+        :thumb="product.thumb"
+        :type="product.type"
+        :series="product.series"
       />
     </div>
   </main>
 </template>
+
+
+
+
+
+
+
 
 <style lang="scss" scoped>
   @use '../scss/general/mixin' as *;

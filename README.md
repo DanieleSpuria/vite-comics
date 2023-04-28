@@ -21,3 +21,4 @@ buon lavoro!
 - Importazione file json
 - Aggiunto componente card 
 - Inserito dati json tramite props
+- Ciclo for inserisce tutti i dati
