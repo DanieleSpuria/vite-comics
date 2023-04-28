@@ -1,6 +1,6 @@
 <script>
   import products from '../data/dc-comics.json';
-  import card from './partial/card.vue';
+  import card from './partial/Card.vue';
   export default {
     name: 'Main',
 
@@ -10,7 +10,8 @@
 
     data() {
       return {
-        products
+        products, 
+        load: false
       }
     }
   }
@@ -46,8 +47,43 @@
         />
       </div>
 
-      <div class="more">
+      <div
+        class="row"
+        :class="{'d-block' : load}"
+      >
+        <card
+          v-for="(product, index) in products"
+          :key="index"
+          :thumb="product.thumb"
+          :type="product.type"
+          :series="product.series"
+          :price="product.price"
+        />
+        <card
+          v-show="load"
+          v-for="(product, index) in products"
+          :key="index"
+          :thumb="product.thumb"
+          :type="product.type"
+          :series="product.series"
+          :price="product.price"
+        />
+      </div>
+
+      <div
+        class="more"
+        @click="load = true"
+        v-if="!load"
+      >
         <h5>LOAD MORE</h5>
+      </div>
+
+      <div
+        class="more"
+        @click="load = false"
+        v-if="load"
+      >
+        <h5>HIDE</h5>
       </div>
     </div>
   </main>
@@ -105,6 +141,11 @@
       .row {
       display: flex;
       flex-wrap: wrap;
+      }
+
+      .row:nth-of-type(2){
+        display: none;
+        flex-wrap: wrap;
       }
     }
   }
