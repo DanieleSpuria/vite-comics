@@ -14,6 +14,7 @@
     },
     data() {
       return {
+        
       }
     }
   }
@@ -21,7 +22,7 @@
 
 <template>
   <Header/>
-  <Main/>
+  <Main name="ciao!"/>
   <Shop/>
   <Footer/>
 </template>

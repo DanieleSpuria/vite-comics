@@ -58,8 +58,8 @@
 
 
 <style lang="scss" scoped>
-  @use '../scss/partials/mixin' as *;
-  @use '../scss/partials/variables' as *;
+  @use '../scss/general/mixin' as *;
+  @use '../scss/general/variables' as *;
 
   header {
     width: 100%;

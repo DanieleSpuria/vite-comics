@@ -10,6 +10,12 @@
         sites, 
         social
       }
+    },
+
+    methods: {
+      getImage(img) {
+        return new URL (`../assets/img/${img}`, import.meta.url).href;
+      }
     }
   }
 </script>
@@ -103,7 +109,7 @@
           >
             <a :href="link.href">
               <img
-                :src="link.img"
+                :src="getImage(link.img)"
                 alt="social"
               >
             </a> 
@@ -122,8 +128,8 @@
 
 
 <style lang="scss" scoped>
-  @use '../scss/partials/mixin' as *;
-  @use '../scss/partials/variables' as *;
+  @use '../scss/general/mixin' as *;
+  @use '../scss/general/variables' as *;
 
   footer {
     height: 600px;

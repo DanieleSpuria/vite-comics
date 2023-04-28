@@ -54,27 +54,27 @@ const menu = [
 const shop = [
   {
     name: 'digital comics',
-    img: 'src/assets/img/buy-comics-digital-comics.png',
+    img: 'buy-comics-digital-comics.png',
     href: '#'
   },
   {
     name: 'dc merchandise',
-    img: 'src/assets/img/buy-comics-merchandise.png',
+    img: 'buy-comics-merchandise.png',
     href: '#'
   },
   {
     name: 'subcription',
-    img: 'src/assets/img/buy-comics-subscriptions.png',
+    img: 'buy-comics-subscriptions.png',
     href: '#'
   },
   {
     name: 'comic shop locator',
-    img: 'src/assets/img/buy-comics-shop-locator.png',
+    img: 'buy-comics-shop-locator.png',
     href: '#'
   },
   {
     name: 'dc power visa',
-    img: 'src/assets/img/buy-dc-power-visa.svg',
+    img: 'buy-dc-power-visa.svg',
     href: '#'
   },
 ];
@@ -199,23 +199,23 @@ const sites = [
 
 const social = [
   {
-  img: 'src/assets/img/footer-facebook.png',
+  img: 'footer-facebook.png',
   href: '#'
   },
   {
-  img: 'src/assets/img/footer-periscope.png',
+  img: 'footer-periscope.png',
   href: '#'
   },
   {
-  img: 'src/assets/img/footer-pinterest.png',
+  img: 'footer-pinterest.png',
   href: '#'
   },
   {
-  img: 'src/assets/img/footer-twitter.png',
+  img: 'footer-twitter.png',
   href: '#'
   },
   {
-  img: 'src/assets/img/footer-youtube.png',
+  img: 'footer-youtube.png',
   href: '#'
   }
 ]

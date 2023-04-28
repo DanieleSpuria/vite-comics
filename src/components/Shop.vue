@@ -1,10 +1,17 @@
 <script>
+  // import {getImage} from '../assets/js/functions'
   import {shop} from '../data/db'
   export default {
     name: 'Shop',
     data() {
       return {
         shop
+      }
+    },
+
+    methods: {
+      getImage(img) {
+        return new URL (`../assets/img/${img}`, import.meta.url).href;
       }
     }
   }
@@ -26,7 +33,7 @@
               v-for="(link, index) of shop"   
               :key="index"
             >
-              <img :src="link.img" alt="imgShop">
+              <img :src="getImage(link.img)" alt="imgShop">
               <a :href="link.href">{{ link.name }}</a>
             </li>
         </ul>
@@ -43,8 +50,8 @@
 
 
 <style lang="scss" scoped>
-  @use '../scss/partials/variables'  as *;
-  @use '../scss/partials/mixin'  as *;
+  @use '../scss/general/variables'  as *;
+  @use '../scss/general/mixin'  as *;
 
   .shop {
     width: 100%;
