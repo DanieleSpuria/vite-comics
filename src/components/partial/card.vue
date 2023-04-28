@@ -45,6 +45,7 @@
     padding: 25px;
     width: calc(100% / 6);
     text-align: center;
+    cursor: pointer;
 
     &:hover {
       transform: scale(1.2);
