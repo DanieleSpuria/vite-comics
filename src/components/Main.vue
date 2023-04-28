@@ -99,6 +99,7 @@
 
       .more {
         margin-top: 25px;
+        cursor: pointer;
       }
 
       .row {
