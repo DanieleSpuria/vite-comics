@@ -36,6 +36,7 @@
         :thumb="product.thumb"
         :type="product.type"
         :series="product.series"
+        :price="product.price"
       />
     </div>
   </main>
@@ -61,8 +62,6 @@
         height: 400px;
         object-fit: cover;
         object-position: top 
-
-
       }
     }
 
