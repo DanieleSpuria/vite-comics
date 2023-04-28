@@ -26,7 +26,7 @@
 <template>
   <main>
     <div class="jumbotron">
-      <img src="" alt="">
+      <img src="../assets/img/jumbotron.jpg" alt="jumbo">
     </div>
 
     <div class="container">
@@ -52,9 +52,20 @@
   @use '../scss/general/mixin' as *;
 
   main {
-    background-color: black;
+    background-color: #1c1c1c;
     color: white;
     
+    .jumbotron {
+
+      img {
+        height: 400px;
+        object-fit: cover;
+        object-position: top 
+
+
+      }
+    }
+
     .container {
       display: flex;
       flex-wrap: wrap;

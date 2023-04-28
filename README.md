@@ -22,3 +22,4 @@ buon lavoro!
 - Aggiunto componente card 
 - Inserito dati json tramite props
 - Ciclo for inserisce tutti i dati
+- aggiunto jumbotron
